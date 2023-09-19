@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>Tech Searcher</title>
+    <link rel="icon" type="image/x-icon" href="{% static '/images/icon.jpg'%}">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="media/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#">Monday, January 1, 2045</a>
+                        </li>
+                
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="/contact-us">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body small" href="/admin">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-google-plus-g"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="/" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">TECH<span class="text-secondary font-weight-normal">SEARCHER</span></h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <a href="https://htmlcodex.com"><img class="img-fluid" src="media/ads-728x90.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+     <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="/" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">TECH<span class="text-white font-weight-normal">SEARCHER</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CATEGORY</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="/category/information-technology" class="dropdown-item">Information Technology</a>
+                            <a href="/category/artificial-intelligence" class="dropdown-item">Artificial Intelligence</a>
+                            <a href="/category/computer-networks" class="dropdown-item">Computer Networks</a>
+                            <a href="/category/programming" class="dropdown-item">Programming</a>
+                            <a href="/category/operating-systems" class="dropdown-item">Operating Systems</a>
+                            <a href="/category/robotics" class="dropdown-item">Robotics</a>
+                            <a href="/category/quantum-computing" class="dropdown-item">Quantum computing</a>
+                            <a href="/category/data-science" class="dropdown-item">Data science</a>
+                            <a href="/category/automation" class="dropdown-item">Automation</a>
+                            <a href="/category/virtual-reality" class="dropdown-item">Virtual reality</a>
+                        </div>
+                    </div>
+                    <a href="/blogs" class="nav-item nav-link">Blogs</a>
+                    <a href="/contact-us" class="nav-item nav-link">Contact</a>
+                    <a href="/about-us" class="nav-item nav-link">About</a>
+                </div>
+                <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 240px;">
+                    <input type="text" class="form-control border-0" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Footer start -->
+     <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="row py-4" style="gap:110px;">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Get In Touch</h5>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Stree no 2 Sabzazaar Colony behind shell pump Bahawalpur</p>
+                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>+92 307 8123255</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>jamshedhafeez44@gmail.com</p>
+                <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-5" style="">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Categories</h5>
+                <div class="m-n1">
+                    <a href="/category/information-technology" class="btn btn-sm btn-secondary m-1">Information Technology</a>
+                    <a href="/category/artificial-intelligence" class="btn btn-sm btn-secondary m-1">Artificial Intelligence</a>
+                    <a href="/category/computer-networks" class="btn btn-sm btn-secondary m-1">Computer Networks</a>
+                    <a href="/category/programming" class="btn btn-sm btn-secondary m-1">Programming</a>
+                    <a href="/category/operating-systems" class="btn btn-sm btn-secondary m-1">Operating Systems</a>
+                    <a href="/category/robotics" class="btn btn-sm btn-secondary m-1">Robotics</a>
+                    <a href="/category/quantum-computing" class="btn btn-sm btn-secondary m-1">Quantum computing</a>
+                    <a href="/category/data-science" class="btn btn-sm btn-secondary m-1">Data science</a>
+                    <a href="/category/automation" class="btn btn-sm btn-secondary m-1">Automation</a>
+                    <a href="/category/virtual-reality" class="btn btn-sm btn-secondary m-1">Virtual reality</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Links</h5>
+                <div class="row" style="margin:0% 0%;">
+                    <div class="col-4 mb-3" style="flex:1 0 100%;max-width:100%;">
+                        <a href="/about-us" style="display:flex;">About Us</a>
+                        <a href="/privacy-policy" style="display:flex;">Privacy Policy</a>
+                        <a href="/terms&conditions" style="display:flex;">Terms & Conditions</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            
+
+
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">Tech Searchers</a>. All Rights Reserved.
+        
+        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js'%}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js'%}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+
+</html>
